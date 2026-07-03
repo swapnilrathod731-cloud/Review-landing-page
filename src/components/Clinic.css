@@ -1,0 +1,125 @@
+.clinic{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px;
+    gap:50px;
+}
+
+.clinic-left{
+    flex:1;
+}
+
+.clinic-left h2{
+    font-size:35px;
+    color:#0b4da1;
+}
+
+.clinic-left p{
+    margin:20px 0;
+    line-height:1.7;
+}
+
+.clinic-left button{
+    padding:12px 25px;
+    background:#0b7cff;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.clinic-right img{
+    width:300px;
+    border-radius:10px;
+    transition: all 0.4s ease;
+    cursor:pointer;
+}
+
+.clinic-right img:hover{
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(224, 213, 213, 0.25);
+}
+/* ===========================
+   Tablet Responsive (768px)
+=========================== */
+
+@media (max-width:768px){
+
+    .clinic{
+        flex-direction:column;
+        text-align:center;
+        padding:50px 30px;
+        gap:40px;
+    }
+
+    .clinic-left{
+        width:100%;
+    }
+
+    .clinic-left h2{
+        font-size:30px;
+    }
+
+    .clinic-left p{
+        font-size:16px;
+        line-height:1.8;
+    }
+
+    .clinic-left button{
+        padding:12px 28px;
+        font-size:16px;
+    }
+
+    .clinic-right img{
+        width:280px;
+    }
+
+}
+
+
+/* ===========================
+   Mobile Responsive (480px)
+=========================== */
+
+@media (max-width:480px){
+
+    .clinic{
+        flex-direction:column;
+        text-align:center;
+        padding:35px 20px;
+        gap:30px;
+    }
+
+    .clinic-left{
+        width:100%;
+    }
+
+    .clinic-left h2{
+        font-size:26px;
+    }
+
+    .clinic-left p{
+        font-size:15px;
+        line-height:1.7;
+        margin:18px 0;
+    }
+
+    .clinic-left button{
+        width:100%;
+        padding:14px;
+        font-size:16px;
+        border-radius:8px;
+    }
+
+    .clinic-right img{
+        width:100%;
+        max-width:280px;
+        border-radius:12px;
+    }
+
+    .clinic-right img:hover{
+        transform:scale(1.04);
+    }
+
+}
